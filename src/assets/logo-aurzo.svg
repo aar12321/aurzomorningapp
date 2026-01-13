@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="white"/>
+  
+  <!-- Stars -->
+  <g id="stars">
+    <!-- Top star - yellow -->
+    <polygon points="300,120 310,150 340,150 315,170 325,200 300,180 275,200 285,170 260,150 290,150" fill="#FFB92C"/>
+    
+    <!-- Right arrow star - orange -->
+    <polygon points="350,220 360,240 385,240 365,255 375,280 350,265 325,280 335,255 315,240 340,240" fill="#FF8A50"/>
+  </g>
+  
+  <!-- Letter A with gradient (Purple to Pink gradient) -->
+  <defs>
+    <linearGradient id="aGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5B21B6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8A50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Letter A shape -->
+  <path d="M 100 80 L 180 280 L 140 280 L 120 220 L 80 220 L 60 280 L 20 280 Z M 100 120 L 65 200 L 135 200 Z" fill="url(#aGradient)" stroke="none"/>
+  
+  <!-- Rocket/Arrow with curve -->
+  <path d="M 150 200 Q 220 150 280 120" stroke="url(#arrowGradient)" stroke-width="35" fill="none" stroke-linecap="round"/>
+  
+  <!-- Decorative dots inside A -->
+  <circle cx="90" cy="240" r="12" fill="#B91C8C"/>
+  <circle cx="110" cy="260" r="12" fill="#B91C8C"/>
+</svg>
