@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>AurzoMorning — Your Entire Day, Powered by AI</title>
+  <meta name="description"
+    content="The first AI-powered daily operating system. We sync your calendar and give you AI tools for every moment of your day." />
+  <meta name="author" content="AurzoMorning" />
+
+  <meta property="og:title" content="AurzoMorning — Your Entire Day, Powered by AI" />
+  <meta property="og:description"
+    content="Connect your calendar and get AI tools for every task, meeting, and decision. Tools find you." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aurzomorning.com" />
+  <meta property="og:image" content="/assets/aurzo-logo.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AurzoMorning — Your Entire Day, Powered by AI" />
+  <meta name="twitter:description"
+    content="Connect your calendar and get AI tools for every task, meeting, and decision." />
+  <meta name="twitter:image" content="/assets/aurzo-logo.png" />
+
+  <link rel="icon" type="image/png" href="/assets/aurzo-logo.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#f97316" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="AurzoMorning" />
+</head>
+
+<body>
+  <div id="root">
+    <!-- Initial loading state -->
+    <div id="initial-loader" style="
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #fafafa 0%, #f5f5f5 100%);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    ">
+      <div style="text-align: center;">
+        <div style="
+          width: 64px;
+          height: 64px;
+          background: linear-gradient(135deg, #f97316 0%, #f59e0b 100%);
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 16px auto;
+          animation: pulse 2s ease-in-out infinite;
+        ">
+          <span style="color: white; font-weight: bold; font-size: 28px;">A</span>
+        </div>
+        <p style="color: #737373; font-size: 14px; margin: 0;">Loading AurzoMorning...</p>
+      </div>
+    </div>
+    <style>
+      @keyframes pulse {
+
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        50% {
+          opacity: 0.8;
+          transform: scale(0.98);
+        }
+      }
+    </style>
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
