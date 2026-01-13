@@ -1,0 +1,42 @@
+-- Add all topics from the quiz data
+-- This migration adds all the topics found in the CSV
+
+INSERT INTO public.topics (name, category, description) VALUES
+('Pre-Calculus', 'Math', 'Build pre-calculus foundation'),
+('Algebra', 'Math', 'Build foundation in equations and functions'),
+('Geometry', 'Math', 'Master shapes, angles, and spatial reasoning'),
+('Chemistry', 'Science', 'Discover elements, reactions, and compounds'),
+('Biology', 'Science', 'Learn about life, cells, and ecosystems'),
+('Physics', 'Science', 'Understand the fundamental laws of nature'),
+('Physiology', 'Science', 'Learn about human body systems and functions'),
+('Economics', 'Social Science', 'Understand markets, supply and demand'),
+('English', 'Language', 'Enhance reading, grammar, and vocabulary'),
+('Computer Science Basics', 'Technology', 'Learn fundamentals of computer science'),
+('SAT/ACT Prep', 'Test Prep', 'Prepare for college entrance exams'),
+('History (Ongoing)', 'History', 'Explore historical events and trends'),
+('General Knowledge (Ongoing)', 'Trivia', 'Expand your mind with fun facts'),
+('Fun & Pop Culture (Ongoing)', 'Trivia', 'Stay current with pop culture'),
+('Retirement Planning', 'Life Skills', 'Plan for your financial future'),
+('Credit & Debt Management', 'Life Skills', 'Master credit and debt strategies'),
+('Cybersecurity Awareness', 'Technology', 'Protect yourself online'),
+('Nutrition Basics', 'Health', 'Learn about healthy eating and nutrition'),
+('AI Tools & Everyday Tech', 'Technology', 'Master modern AI tools and technology'),
+('Business & Career (Ongoing)', 'Professional', 'Advance your career skills'),
+('Fitness & Habits', 'Health', 'Build healthy exercise routines'),
+('Email & Calendar Best Practices', 'Productivity', 'Master time management tools'),
+('Logic & Problem Solving (Ongoing)', 'Critical Thinking', 'Improve logical reasoning'),
+('Geography & World Knowledge (Ongoing)', 'Geography', 'Learn about the world'),
+('Entrepreneurship', 'Professional', 'Learn to start and run a business'),
+('Small Business Management', 'Professional', 'Master small business operations'),
+('Workplace Communication', 'Professional', 'Improve workplace communication skills'),
+('Leadership & Teamwork', 'Professional', 'Develop leadership and team skills'),
+('Resume / LinkedIn / Interview Skills', 'Professional', 'Master job search skills'),
+('Excel Tips & Tricks', 'Productivity', 'Master Excel for productivity'),
+('Power BI Basics', 'Productivity', 'Learn data visualization with Power BI'),
+('Technology & Productivity', 'Technology', 'Boost your tech productivity'),
+('History & Culture', 'History', 'Explore historical and cultural knowledge'),
+('Cultural Awareness & Global Events', 'Current Affairs', 'Stay culturally aware and informed'),
+('Health & Wellness', 'Health', 'Maintain overall health and wellbeing'),
+('Mental Health Awareness', 'Health', 'Learn about mental health and wellbeing')
+ON CONFLICT DO NOTHING;
+
