@@ -1,14 +1,14 @@
+/* Import Inter font for SF Pro-like appearance */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* AurzoMorning Design System
+/* Aurzo Design System
    Apple-like, Calm, Bright Morning Energy
    Light mode first with soft shadows
 */
-
-/* Import Inter font for SF Pro-like appearance */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
