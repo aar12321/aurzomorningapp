@@ -59,10 +59,10 @@ export default function Landing() {
                             onClick={() => navigate('/login')}
                             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                         >
-                            Login
+                            Log in
                         </button>
                         <button
-                            onClick={() => navigate('/login')}
+                            onClick={() => navigate('/signup')}
                             className="btn-primary text-sm !px-4 !py-2"
                         >
                             Get Started
@@ -83,15 +83,18 @@ export default function Landing() {
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <button
-                            onClick={() => navigate('/login')}
+                            onClick={() => navigate('/signup')}
                             className="btn-primary text-lg"
                         >
                             <Calendar className="w-5 h-5" />
-                            Connect My Calendar
+                            Get Started Free
                         </button>
-                        <button className="btn-secondary text-lg">
+                        <button
+                            onClick={() => navigate('/login')}
+                            className="btn-secondary text-lg"
+                        >
                             <Play className="w-5 h-5" />
-                            Watch Demo
+                            Sign In
                         </button>
                     </div>
                 </div>
@@ -212,7 +215,7 @@ export default function Landing() {
                         Join thousands who've made their days smarter with Aurzo.
                     </p>
                     <button
-                        onClick={() => navigate('/login')}
+                        onClick={() => navigate('/signup')}
                         className="btn-primary text-lg"
                     >
                         Start Free
